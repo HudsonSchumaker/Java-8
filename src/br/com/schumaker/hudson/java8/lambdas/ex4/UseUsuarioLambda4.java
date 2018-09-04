@@ -32,7 +32,7 @@ public class UseUsuarioLambda4 {
         Consumer<Usuario> mostrador2 = u -> {System.out.println(u.getNome());};
         usuarios.forEach(mostrador2);
         
-        //Enfim Lambada - 3
+        //Enfim Lambada - 3 sem {} pq só tem uma instrução
         Consumer<Usuario> mostrador3 = u -> System.out.println(u.getNome());
         usuarios.forEach(mostrador3);
         
@@ -43,5 +43,9 @@ public class UseUsuarioLambda4 {
         usuarios.forEach((u) -> {
             System.out.println(u.toString());
         });
+        
+        //Sem mostrador sem {} pq só tem uma instrução
+        usuarios.forEach(u -> System.out.println(u.toString()));
+        
     }
 }
