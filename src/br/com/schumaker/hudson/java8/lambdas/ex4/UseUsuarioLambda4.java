@@ -18,7 +18,10 @@ public class UseUsuarioLambda4 {
         Usuario user2 = new Usuario("Humberto Schumaker", 120);
         Usuario user3 = new Usuario("Hugo Schumaker", 190);
         Usuario user4 = new Usuario("Hudson Schumaker", 190);
-        List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4);
+        Usuario user5 = new Usuario("Gabriel Schumaker", 90);
+        Usuario user6 = new Usuario("Nikolas Schumaker", 290);
+        Usuario user7 = new Usuario("Elisabeth Schumaker", 195);
+        List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4, user5, user6, user7);
         
         Collections.reverse(usuarios);
 
