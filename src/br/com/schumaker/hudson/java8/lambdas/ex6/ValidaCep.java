@@ -4,6 +4,7 @@ package br.com.schumaker.hudson.java8.lambdas.ex6;
  *
  * @author hudsonschumaker
  */
+
 public class ValidaCep {
 
     public static void main(String[] args) {

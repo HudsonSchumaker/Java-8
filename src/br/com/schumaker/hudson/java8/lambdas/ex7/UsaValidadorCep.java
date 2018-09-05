@@ -5,7 +5,6 @@ package br.com.schumaker.hudson.java8.lambdas.ex7;
  * @author hudsonschumaker
  */
 
-
 public class UsaValidadorCep {
     
     public static void main(String[] args) {

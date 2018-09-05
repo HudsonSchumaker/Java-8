@@ -4,10 +4,9 @@ package br.com.schumaker.hudson.java8.lambdas.ex5;
  *
  * @author hudsonschumaker
  */
+
 public class ThreadLambda {
-
     public static void main(String[] args) {
-
         //Maneira velha (classe anonima)
         Runnable r = new Runnable() {
             @Override

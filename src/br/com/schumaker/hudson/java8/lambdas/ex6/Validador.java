@@ -6,7 +6,6 @@ package br.com.schumaker.hudson.java8.lambdas.ex6;
  * @param <T>
  */
 
-
 @FunctionalInterface
 public interface Validador<T> {
     boolean valida(T t);

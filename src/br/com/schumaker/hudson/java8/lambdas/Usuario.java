@@ -7,6 +7,8 @@ import lombok.Setter;
  *
  * @author hudsonschumaker
  */
+
+//Anotações Lombok
 @Getter
 @Setter
 public class Usuario {
