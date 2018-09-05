@@ -1,4 +1,4 @@
-package br.com.schumaker.hudson.java8.methodReference.ex1;
+package br.com.schumaker.hudson.java8.methodReference;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.Arrays;
@@ -10,7 +10,7 @@ import java.util.List;
  * @author hudsonschumaker
  */
 
-public class MethodReference {
+public class MethodReference1 {
      public static void main(String... args) {
 
         Usuario user1 = new Usuario("Henrique Schumaker", 150);
