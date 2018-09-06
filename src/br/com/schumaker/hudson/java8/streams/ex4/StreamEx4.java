@@ -1,6 +1,7 @@
 package br.com.schumaker.hudson.java8.streams.ex4;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -23,18 +24,21 @@ public class StreamEx4 {
         Usuario user8 = factory.apply("Eliza Schumaker", 1000);
         Usuario user9 = factory.apply("Marcos Schumaker", 100);
         Usuario user10 = factory.apply("Wilson Schumaker", 1300);
+        List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10);
         
-        List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4, user5,
-            user6, user7, user8, user9, user10);
+        List<Usuario> maisQue100 = new ArrayList<>();
         
-        //filtra usuarios com + de 100 pontos e os torna moderadores
+        //filtra usuarios com + de 100 pontos e adiciona na lista
         usuarios.stream()
                 .filter(u -> u.getPontos() > 100)
-                .forEach(Usuario::tornaModerador);
+                .forEach(u -> maisQue100.add(u));
         
-        //filtra usuarios moderadores e imprime-os
+        //filtra usuarios com + de 100 pontos e adiciona na lista simplificado com method reference
         usuarios.stream()
-                .filter(u -> u.isModerador())
-                .forEach(System.out::println);
+                .filter(u -> u.getPontos() > 100)
+                .forEach(maisQue100::add);
+
+        //imprime-os (ira imprimir a lista 2x comente uma versao acima pra imprimir corretamente)
+        maisQue100.forEach(System.out::println);
     }
 }
