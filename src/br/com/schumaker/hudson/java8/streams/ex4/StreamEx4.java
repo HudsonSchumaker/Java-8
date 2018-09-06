@@ -1,4 +1,4 @@
-package br.com.schumaker.hudson.java8.streams.ex3;
+package br.com.schumaker.hudson.java8.streams.ex4;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.function.BiFunction;
  *
  * @author hudson schumaker
  */
-public class StreamEx3 {
+public class StreamEx4 {
     public static void main(String[] args) {
         //BiFunction para method reference chamar construtor q recebe 2 parametros
         BiFunction<String, Integer, Usuario> factory = Usuario::new;
