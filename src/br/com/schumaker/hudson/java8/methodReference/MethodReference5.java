@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 public class MethodReference5 {
     public static void main(String... args) {

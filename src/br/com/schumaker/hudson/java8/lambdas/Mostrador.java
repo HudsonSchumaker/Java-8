@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 
 //Classe que implementa  java.util.function.Consumer, que tem um único método, o accept. 

@@ -7,7 +7,7 @@ import java.util.function.Function;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 public class MethodReference6 {
     public static void main(String... args) {
@@ -20,7 +20,7 @@ public class MethodReference6 {
         //Tornar usuarios moderadores com method reference
         usuarios.forEach(Usuario::tornaModerador);
         
-        //Sem mostrador sem {} pq só tem uma instrução
-        usuarios.forEach(u -> System.out.println(u.toString()));
+        //method reference para imprimir 
+        usuarios.forEach(System.out::println);
     }
 }

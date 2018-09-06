@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 public class MethodReference3 {
     public static void main(String... args) {
@@ -29,7 +29,7 @@ public class MethodReference3 {
         //Comparar com methods reference usando comparingInt para evitar autoBoxing
         usuarios.sort(comparingInt(Usuario::getPontos));
         
-        //Lambda
-        usuarios.forEach(u-> System.out.println(u.toString()));    
+        //method reference para imprimir 
+        usuarios.forEach(System.out::println);
      }
 }

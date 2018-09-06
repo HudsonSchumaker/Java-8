@@ -7,7 +7,7 @@ import static java.util.Comparator.comparingInt;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 public class ComparatorsEx1 {
    public static void main(String... args) {

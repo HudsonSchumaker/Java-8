@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 public class MethodReference4 {
     public static void main(String... args) {

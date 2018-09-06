@@ -2,7 +2,7 @@ package br.com.schumaker.hudson.java8.lambdas.ex5;
 
 /**
  *
- * @author hudsonschumaker
+ * @author hudson schumaker
  */
 
 public class ThreadLambda {
@@ -12,7 +12,7 @@ public class ThreadLambda {
             @Override
             public void run() {
                 for (int i = 0; i <= 1000; i++) {
-                    System.out.println("R: " + i);
+                    System.out.println("r: " + i);
                 }
             }
         };

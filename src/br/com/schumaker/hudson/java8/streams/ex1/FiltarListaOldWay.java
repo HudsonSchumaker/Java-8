@@ -1,17 +1,17 @@
-package br.com.schumaker.hudson.java8.methodReference;
+package br.com.schumaker.hudson.java8.streams.ex1;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
-import java.util.List;
 import java.util.ArrayList;
-import static java.util.Comparator.comparingInt;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  *
  * @author hudson schumaker
  */
-
-public class MethodReference2 {
-     public static void main(String... args) {
+public class FiltarListaOldWay {
+    public static void main(String[] args) {
         Usuario user1 = new Usuario("Henrique Schumaker", 50);
         Usuario user2 = new Usuario("Humberto Schumaker", 120);
         Usuario user3 = new Usuario("Hugo Schumaker", 190);
@@ -35,13 +35,23 @@ public class MethodReference2 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Comparar com methods reference usando comparingInt para evitar autoBoxing
-        usuarios.sort(comparingInt(Usuario::getPontos));
+        //Criar classe anonima pra 
+        Collections.sort(usuarios, new Comparator<Usuario>(){
+            @Override
+            public int compare(Usuario u1, Usuario u2){
+                return u1.getPontos() - u2.getPontos();
+            }
+        });
         
-        //method reference
-        usuarios.forEach(Usuario::tornaModerador);
+        Collections.reverse(usuarios);
+        List<Usuario> top5 = usuarios.subList(0, 5);
         
-        //Lambda
-        usuarios.forEach(u-> System.out.println(u.toString()));    
-     }
+        for(Usuario u : top5){
+            u.tornaModerador();
+        }
+        
+        for(Usuario u : usuarios){
+            System.out.println(u);
+        }
+    }
 }
