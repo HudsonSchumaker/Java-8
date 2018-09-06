@@ -49,6 +49,5 @@ public class UseUsuarioLambda4 {
         
         //Sem mostrador sem {} pq só tem uma instrução
         usuarios.forEach(u -> System.out.println(u.toString()));
-        
     }
 }
