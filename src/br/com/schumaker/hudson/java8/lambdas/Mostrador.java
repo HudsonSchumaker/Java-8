@@ -1,6 +1,5 @@
 package br.com.schumaker.hudson.java8.lambdas;
 
-import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.function.Consumer;
 
 /**
