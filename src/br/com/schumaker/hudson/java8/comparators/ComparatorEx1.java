@@ -9,7 +9,7 @@ import static java.util.Comparator.comparingInt;
  *
  * @author hudson schumaker
  */
-public class ComparatorsEx2 {
+public class ComparatorEx1 {
    public static void main(String... args) {
         Usuario user1 = new Usuario("Henrique Schumaker", 50);
         Usuario user2 = new Usuario("Humberto Schumaker", 120);
@@ -34,8 +34,8 @@ public class ComparatorsEx2 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Comparar com methods reference com ordem reversa
-        usuarios.sort(comparingInt(Usuario::getPontos).reversed());
+        //Comparar com methods reference complexo
+        usuarios.sort(comparingInt(Usuario::getPontos).thenComparing(Usuario::getNome));
         
         //Lambda
         usuarios.forEach(u-> System.out.println(u.toString()));    
