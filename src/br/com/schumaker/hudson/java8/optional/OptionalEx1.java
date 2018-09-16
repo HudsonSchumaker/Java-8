@@ -6,10 +6,10 @@ import java.util.Optional;
  *
  * @author hudsonschumaker
  */
-public class Java8Tester {
+public class OptionalEx1 {
 
     public static void main(String args[]) {
-        Java8Tester java8Tester = new Java8Tester();
+        OptionalEx1 java8Tester = new OptionalEx1();
         Integer value1 = null;
         Integer value2 = 10;
 
