@@ -1,4 +1,4 @@
-package br.com.schumaker.hudson.java8.streams.ex3;
+package br.com.schumaker.hudson.java8.streams;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.Arrays;
@@ -9,9 +9,9 @@ import java.util.function.BiFunction;
  *
  * @author hudson schumaker
  */
-public class StreamEx3 {
+public class StreamEx2Prank {
     public static void main(String[] args) {
-        //BiFunction para method reference chamar construtor q recebe 2 parametros
+        //BiFunction para method reference referenciar construtor q recebe 2 parametros
         BiFunction<String, Integer, Usuario> factory = Usuario::new;
         Usuario user1 = factory.apply("Henrique Schumaker", 50);
         Usuario user2 = factory.apply("Humberto Schumaker", 120);
@@ -27,14 +27,17 @@ public class StreamEx3 {
         List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4, user5,
             user6, user7, user8, user9, user10);
         
-        //filtra usuarios com + de 100 pontos e os torna moderadores
-        usuarios.stream()
-                .filter(u -> u.getPontos() > 100)
-                .forEach(Usuario::tornaModerador);
+        //filtra usuarios com + de 100 pontos
+        usuarios.stream().filter(u -> u.getPontos() >100);
         
-        //filtra usuarios moderadores e imprime-os
-        usuarios.stream()
-                .filter(u -> u.isModerador())
-                .forEach(System.out::println);
+        //imprime todos
+        usuarios.forEach(System.out::println);
+        
+        /*
+        Por que na saída apareceu todos, sendo que eles não tem mais de 100 pontos? 
+        Ele não aplicou o  ltro na lista de usuários! Isso porque o método filter, assim como os 
+        demais métodos da interface Stream, não alteram os elementos do stream original! É muito 
+        importante saber que o Stream não tem efeito colateral sobre a coleção que o originou.
+        */
     }
 }

@@ -1,15 +1,15 @@
-package br.com.schumaker.hudson.java8.streams.ex1;
+package br.com.schumaker.hudson.java8.streams;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import static java.util.Comparator.comparingInt;
 
 /**
  *
  * @author hudson schumaker
  */
-public class StreamsEx1Refinado {
+public class StreamEx1 {
     public static void main(String[] args) {
         Usuario user1 = new Usuario("Henrique Schumaker", 50);
         Usuario user2 = new Usuario("Humberto Schumaker", 120);
@@ -34,14 +34,18 @@ public class StreamsEx1Refinado {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //sem importação estatica
-        //usuarios.sort(Comparator.comparingInt(Usuario::getPontos).reversed());
-        usuarios.sort(comparingInt(Usuario::getPontos).reversed());
+        //lambda comparar e ordernar em ordem ascendente por pontos
+        Collections.sort(usuarios, (Usuario u1, Usuario u2) -> u1.getPontos() - u2.getPontos());
         
-        //sublista com for each e reference method
-        usuarios.subList(0, 5).forEach(Usuario::tornaModerador);
+        //inverte a lista
+        Collections.reverse(usuarios);
         
-        //Java8
+        //filtra o 5 maiores
+        List<Usuario> top5 = usuarios.subList(0, 5);
+
+        //lambda para tornar os 5 maiores em moderador
+        top5.forEach((u) -> u.tornaModerador());
+        
         //Lambda para imprimir lista
         usuarios.forEach(u -> System.out.println(u));
         

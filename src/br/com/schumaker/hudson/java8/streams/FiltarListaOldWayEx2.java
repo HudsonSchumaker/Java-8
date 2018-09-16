@@ -1,4 +1,4 @@
-package br.com.schumaker.hudson.java8.streams.ex2;
+package br.com.schumaker.hudson.java8.streams;
 
 import br.com.schumaker.hudson.java8.lambdas.Usuario;
 import java.util.ArrayList;
