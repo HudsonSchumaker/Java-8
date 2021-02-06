@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author hudson schumaker
+ * @author Hudson Schumaker
  */
 public class FiltarListaOldWayEx1 {
     public static void main(String[] args) {
