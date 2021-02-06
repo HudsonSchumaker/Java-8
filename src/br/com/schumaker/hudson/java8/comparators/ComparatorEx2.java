@@ -34,10 +34,10 @@ public class ComparatorEx2 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Comparar com methods reference com ordem reversa
+        // Comparar com methods reference com ordem reversa
         usuarios.sort(comparingInt(Usuario::getPontos).reversed());
         
-        //Lambda
+        // Lambda
         usuarios.forEach(u-> System.out.println(u.toString()));    
      }
 }
