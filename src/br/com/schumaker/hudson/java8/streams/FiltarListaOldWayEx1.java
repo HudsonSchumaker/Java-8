@@ -35,7 +35,7 @@ public class FiltarListaOldWayEx1 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Criar classe anonima pra 
+        // Criar classe anonima pra 
         Collections.sort(usuarios, new Comparator<Usuario>(){
             @Override
             public int compare(Usuario u1, Usuario u2){
