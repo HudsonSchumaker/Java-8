@@ -34,10 +34,10 @@ public class ComparatorEx1 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Comparar com methods reference complexo
+        // Comparar com methods reference complexo
         usuarios.sort(comparingInt(Usuario::getPontos).thenComparing(Usuario::getNome));
         
-        //Lambda
+        // Lambda
         usuarios.forEach(u-> System.out.println(u.toString()));    
      }
 }
