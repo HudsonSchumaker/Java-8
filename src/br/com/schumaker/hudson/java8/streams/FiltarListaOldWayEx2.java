@@ -8,7 +8,7 @@ import java.util.function.BiFunction;
 
 /**
  *
- * @author hudson schumaker
+ * @author Hudson Schumaker
  */
 public class FiltarListaOldWayEx2 {
 
