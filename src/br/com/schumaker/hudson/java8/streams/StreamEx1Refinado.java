@@ -34,20 +34,20 @@ public class StreamEx1Refinado {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //sem importação estatica
-        //usuarios.sort(Comparator.comparingInt(Usuario::getPontos).reversed());
+        // sem importação estatica
+        // usuarios.sort(Comparator.comparingInt(Usuario::getPontos).reversed());
         usuarios.sort(comparingInt(Usuario::getPontos).reversed());
         
-        //sublista com for each e reference method
+        // sublista com for each e reference method
         usuarios.subList(0, 5).forEach(Usuario::tornaModerador);
         
-        //Java8
-        //Lambda para imprimir lista
+        // Java8
+        // Lambda para imprimir lista
         usuarios.forEach(u -> System.out.println(u));
         
         System.out.println("------------------------------------------------------------------------------------------------------");
         
-        //method reference para imprimir lista
+        // method reference para imprimir lista
         usuarios.forEach(System.out::println);
     }
 }
