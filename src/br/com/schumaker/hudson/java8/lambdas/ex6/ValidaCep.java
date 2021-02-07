@@ -9,7 +9,7 @@ public class ValidaCep {
 
     public static void main(String[] args) {
 
-        //Classe anonima
+        // Classe anonima
         Validador<String> validadorCEP = new Validador<String>() {
             public boolean valida(String valor) {
                 return valor.matches("[0-9]{5}-[0-9]{3}");
@@ -19,7 +19,7 @@ public class ValidaCep {
         System.out.println(validadorCEP.valida("444-444"));
         System.out.println(validadorCEP.valida("27623-000"));
 
-        //Lambda
+        // Lambda
         Validador<String> validadorCEP2 = cep -> cep.matches("[0-9]{5}-[0-9]{3}");
 
         System.out.println(validadorCEP2.valida("444-444"));
