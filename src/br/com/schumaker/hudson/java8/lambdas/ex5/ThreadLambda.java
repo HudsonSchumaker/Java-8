@@ -2,7 +2,7 @@ package br.com.schumaker.hudson.java8.lambdas.ex5;
 
 /**
  *
- * @author hudson schumaker
+ * @author Hudson Schumaker
  */
 
 public class ThreadLambda {
