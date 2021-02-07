@@ -2,7 +2,7 @@ package br.com.schumaker.hudson.java8.lambdas.ex7;
 
 /**
  *
- * @author hudson schumaker
+ * @author Hudson Schumaker
  */
 
 public class UsaValidadorCep {
