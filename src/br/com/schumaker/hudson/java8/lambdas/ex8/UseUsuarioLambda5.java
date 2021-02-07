@@ -37,13 +37,13 @@ public class UseUsuarioLambda5 {
         usuarios.add(user9);
         usuarios.add(user10);
         
-        //Comparar com methods reference
+        // Comparar com methods reference
         usuarios.sort(comparing(Usuario::getNome));
         
-        //method reference
+        // method reference
         usuarios.forEach(Usuario::tornaModerador);
         
-        //Lambda
+        // Lambda
         usuarios.forEach(u-> System.out.println(u.toString()));       
     }
 }
