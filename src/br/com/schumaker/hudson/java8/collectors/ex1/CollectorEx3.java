@@ -12,7 +12,7 @@ import java.util.function.BiFunction;
 public class CollectorEx3 {
 
     public static void main(String[] args) {
-        //BiFunction para method reference chamar construtor q recebe 2 parametros
+        // BiFunction para method reference chamar construtor q recebe 2 parametros
         BiFunction<String, Integer, Usuario> factory = Usuario::new;
         Usuario user1 = factory.apply("Henrique Schumaker", 50);
         Usuario user2 = factory.apply("Humberto Schumaker", 80);
@@ -27,7 +27,7 @@ public class CollectorEx3 {
 
         List<Usuario> usuarios = Arrays.asList(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10);
 
-        //Media dos pontos dos usuarios
+        // Media dos pontos dos usuarios
         double pontuacaoMedia = usuarios.stream()
                 .mapToInt(Usuario::getPontos)
                 .average()
