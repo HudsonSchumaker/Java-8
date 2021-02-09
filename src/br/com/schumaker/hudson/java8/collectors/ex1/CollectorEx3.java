@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class CollectorEx3 {
 
