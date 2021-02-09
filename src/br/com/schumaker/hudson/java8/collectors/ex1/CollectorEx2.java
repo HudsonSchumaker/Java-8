@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toSet;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class CollectorEx2 {
      public static void main(String[] args) {
