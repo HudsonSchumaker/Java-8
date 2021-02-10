@@ -2,7 +2,7 @@ package br.com.schumaker.hudson.java8.collectors.ex1;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class Employee {
     private int id;
