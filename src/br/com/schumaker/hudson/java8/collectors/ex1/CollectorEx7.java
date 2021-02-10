@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class CollectorEx7 {
 
