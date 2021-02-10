@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class CollectorEx6 {
 
