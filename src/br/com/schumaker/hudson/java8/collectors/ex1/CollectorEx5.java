@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author hudsonschumaker
+ * @author Hudson Schumaker
  */
 public class CollectorEx5 {
     public static void main(String[] args) {
