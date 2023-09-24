@@ -1,4 +1,4 @@
-package br.com.schumaker.hudson.java8.collectors.ex1;
+package br.com.schumaker.hudson.java8.collectors;
 
 /**
  *
