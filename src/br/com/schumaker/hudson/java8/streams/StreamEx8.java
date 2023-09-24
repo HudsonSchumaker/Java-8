@@ -88,5 +88,31 @@ public class StreamEx8 {
 
         System.out.println(sum2);
 
+
+        // Flattening a List of Strings into Characters:
+        List<String> words = Arrays.asList("hello", "world");
+        List<Character> characters = words.stream()
+                .flatMap(word -> word.chars().mapToObj(c -> (char) c)) // Flatten into characters
+                .collect(Collectors.toList());
+
+        characters.forEach(System.out::println);
+
+        // Resulting characters: ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+
+        // Flattening Nested Lists:
+        List<List<Integer>> nestedLists = Arrays.asList(
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5),
+                Arrays.asList(6, 7, 8)
+        );
+
+        List<Integer> flattenedList = nestedLists.stream()
+                .flatMap(List::stream) // Flatten the nested lists
+                .collect(Collectors.toList());
+
+        flattenedList.forEach(System.out::println);
+
+        // Resulting flattenedList: [1, 2, 3, 4, 5, 6, 7, 8]
+
     }
 }
