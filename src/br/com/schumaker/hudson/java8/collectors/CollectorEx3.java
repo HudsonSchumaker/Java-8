@@ -14,6 +14,7 @@ public class CollectorEx3 {
     public static void main(String[] args) {
         // BiFunction para method reference chamar construtor q recebe 2 parametros
         BiFunction<String, Integer, Usuario> factory = Usuario::new;
+
         Usuario user1 = factory.apply("Henrique Schumaker", 50);
         Usuario user2 = factory.apply("Humberto Schumaker", 80);
         Usuario user10 = factory.apply("Wilson Schumaker", 1300);
