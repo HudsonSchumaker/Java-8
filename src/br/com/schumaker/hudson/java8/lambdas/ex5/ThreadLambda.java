@@ -22,6 +22,7 @@ public class ThreadLambda {
         Runnable r1 = () -> {
             for (int i = 0; i <= 1000; i++) {
                 System.out.println("r1: " + i);
+                Thread.yield();
             }
         };
         new Thread(r1).start();
@@ -37,6 +38,7 @@ public class ThreadLambda {
         Runnable o = () -> {
             System.out.println("O que sou eu? Que lambda?");
         };
-        new Thread(o).start();
+       var t = new Thread(o);
+       t.start();
     }
 }
